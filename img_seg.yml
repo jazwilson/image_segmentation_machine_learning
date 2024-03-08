@@ -1,0 +1,52 @@
+name: img_seg
+channels:
+  - pytorch
+  - nvidia
+  - conda-forge
+dependencies:
+  - python=3.9
+  - jupyter
+  - jupyterlab=3.*
+  - ipywidgets
+  - numpy
+  - pandas
+  - tqdm 
+  - time
+  
+  # Libaries
+  - scipy
+  - scikit-learn
+  - pyvista #3d library
+  - pocl
+  #- oclgrind
+  - conda-forge::pyclesperanto-prototype
+  
+# File type
+  - libtiff
+  - tifffile
+  - zarr
+# - numcodecs
+
+# Napari
+  - napari = 0.4.11
+  - napari-console >=0.0.4
+  - napari-plugin-engine >=0.1.9
+  - napari-svg >=0.1.4
+  - qtpy >=1.7.0
+  - pyqt
+  - ffmpeg
+  #- QT_QPA_PLATFORM=xcb
+  
+  # Use the nvcc_linux-64 meta-package to use system installed NVCC for pytorch, tensor etc
+  - nvcc_linux-64
+  #- pytorch::pytorch
+  
+    # data viz
+  - matplotlib
+  
+
+  - pip
+  - pip:
+
+    - opencv-python
+
