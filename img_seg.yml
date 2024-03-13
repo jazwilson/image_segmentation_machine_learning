@@ -25,6 +25,8 @@ dependencies:
   - libtiff
   - tifffile
   - zarr
+  - dask-image
+  - dask 
 # - numcodecs
 
 # Napari
